@@ -16,6 +16,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'tpope/vim-fugitive'
   Plug 'sheerun/vim-polyglot'
   Plug 'tmhedberg/SimpylFold'
+  Plug 'rayburgemeestre/phpfolding.vim'
 call plug#end()
 
 "Config Section
