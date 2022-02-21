@@ -17,6 +17,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'sheerun/vim-polyglot'
   Plug 'tmhedberg/SimpylFold'
   Plug 'rayburgemeestre/phpfolding.vim'
+  Plug 'elzr/vim-json'
 call plug#end()
 
 "Config Section
