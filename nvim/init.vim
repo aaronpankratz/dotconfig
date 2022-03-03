@@ -47,6 +47,7 @@ let g:NERDTreeIndicatorMapCustom = {
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle
 nnoremap <silent> <C-n> :NERDTreeToggle<CR>
+nmap ,n :NERDTreeFind<CR>
 
 nnoremap <C-p> :FZF<CR>
 let g:fzf_action = {
