@@ -14,10 +14,13 @@ call plug#begin("~/.vim/plugged")
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'tpope/vim-fugitive'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, '  for': ['markdown', 'vim-plug']}
   Plug 'sheerun/vim-polyglot'
+  Plug 'APZelos/blamer.nvim'
   Plug 'tmhedberg/SimpylFold'
   Plug 'rayburgemeestre/phpfolding.vim'
   Plug 'elzr/vim-json'
+  Plug 'markbiek/phplint.vim'
 call plug#end()
 
 "Config Section
