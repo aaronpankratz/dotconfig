@@ -21,6 +21,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'rayburgemeestre/phpfolding.vim'
   Plug 'elzr/vim-json'
   Plug 'markbiek/phplint.vim'
+  Plug 'udalov/kotlin-vim'
 call plug#end()
 
 "Config Section
