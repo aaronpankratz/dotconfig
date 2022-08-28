@@ -22,12 +22,15 @@ call plug#begin("~/.vim/plugged")
   Plug 'elzr/vim-json'
   Plug 'markbiek/phplint.vim'
   Plug 'udalov/kotlin-vim'
+  Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "Config Section
 if (has("termguicolors"))
   set termguicolors
 endif
+set nocompatible
+filetype plugin on
 syntax on
 colorscheme gruvbox
 
