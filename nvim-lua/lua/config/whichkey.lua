@@ -36,7 +36,8 @@ function M.setup()
       o = { "<cmd>FzfLua oldfiles<cr>", "Old files" },
       g = { "<cmd>FzfLua live_grep<cr>", "Live grep" },
       c = { "<cmd>FzfLua commands<cr>", "Commands" },
-      e = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
+      e = { "<cmd>NvimTreeToggle<cr>", "Toggle Explorer" },
+      s = { "<cmd>NvimTreeFindFile<cr>", "Show in Explorer" },
     },
 
     z = {
