@@ -192,20 +192,18 @@ function M.setup()
         require("config.nvimtree").setup()
       end,
     }
-
     -- LSP
-    use {
-      "neovim/nvim-lspconfig",
-      opt = true,
-      event = "BufReadPre",
-      wants = { "nvim-lsp-installer" },
-      config = function()
-        require("config.lsp").setup()
-      end,
-      requires = {
-        "williamboman/nvim-lsp-installer",
-      },
-    }
+    use "neovim/nvim-lspconfig"
+    use "williamboman/mason.nvim"
+
+    -- blame
+    use "f-person/git-blame.nvim"
+
+    -- black
+    use "ambv/black"
+
+    -- vimwiki
+    use "vimwiki/vimwiki"
 
     -- Bootstrap Neovim
     if packer_bootstrap then
