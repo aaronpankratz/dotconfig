@@ -50,10 +50,19 @@ function M.setup()
       u = { "<cmd>PackerUpdate<cr>", "Update" },
     },
 
-    g = {
+    G = {
       name = "Git",
       s = { "<cmd>Neogit<CR>", "Status" },
     },
+    
+    ["."] = {
+      name = "Go-to",
+      d = { "Definition" },
+      D = { "Declaration" },
+      r = { "References" },
+      i = { "Implementation" },
+    },
+
   }
 
   whichkey.setup(conf)
