@@ -53,8 +53,14 @@ function M.setup()
     G = {
       name = "Git",
       s = { "<cmd>Neogit<CR>", "Status" },
+      b = { "<cmd>GitBlameToggle<CR>", "Blame toggle" },
+      o = { 
+        name = "Open",
+        c = { "<cmd>GitBlameOpenCommitURL<CR>", "Open commit URL" },
+        f = { "<cmd>GitBlameOpenFileURL<CR>", "Open file URL" },
+      },
+      c = { "<cmd>GitBlameCopySHA<CR>", "Copy SHA" },
     },
-    
     ["."] = {
       name = "Go-to",
       d = { "Definition" },
@@ -62,7 +68,6 @@ function M.setup()
       r = { "References" },
       i = { "Implementation" },
     },
-
   }
 
   whichkey.setup(conf)

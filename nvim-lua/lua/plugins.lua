@@ -151,19 +151,15 @@ function M.setup()
       requires = { "nvim-web-devicons" },
     }
     use {
-      "SmiteshP/nvim-gps",
-      requires = "nvim-treesitter/nvim-treesitter",
-      module = "nvim-gps",
-      config = function()
-        require("nvim-gps").setup()
-      end,
+      "SmiteshP/nvim-navic",
+      requires = "neovim/nvim-lspconfig"
     }
 
     -- Treesitter
     use {
       "nvim-treesitter/nvim-treesitter",
       opt = true,
-      event = "BufRead",
+      event = { "BufRead", "BufEnter" },
       run = ":TSUpdate",
       config = function()
         require("config.treesitter").setup()
@@ -204,6 +200,8 @@ function M.setup()
 
     -- vimwiki
     use "vimwiki/vimwiki"
+
+    use "tmhedberg/SimpylFold"
 
     -- Bootstrap Neovim
     if packer_bootstrap then
